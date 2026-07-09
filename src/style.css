@@ -1,0 +1,178 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #f5f6fa;
+}
+
+.navbar {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-bottom: 1px solid silver;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 320px;
+    padding: 12px 18px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    background: white;
+}
+
+
+.search svg {
+    color: gray;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+.White {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.chaklo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 13px;
+    cursor: pointer;
+    background: white;
+}
+
+.dark .chaklo {
+    background-color: black;
+    border: 3px solid white;
+
+}
+
+.container {
+    background-color: #e7ebf9;
+}
+
+.bhawan {
+    padding: 35px 40px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bhawan h1 {
+    margin-bottom: 8px;
+    color: black;
+}
+
+.bhawan p {
+    color: gray;
+
+}
+
+.new {
+
+    background: royalblue;
+    color: white;
+    padding: 8px 27px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.new:hover {
+    background: #1f3f8c;
+    transform: translateY(-4px) scale(1.05);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 30px 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    color: #222;
+    font-size: 38px;
+}
+
+.action {
+    position: absolute;
+    right: 20px;
+    bottom: 45px;
+    background: #ffe6e6;
+    color: red;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.action:hover {
+    transform: scale(1.03) translateX(-4px);
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+.dark .navbar {
+    background-color: #222;
+}
+
+.dark .container {
+    background-color: #111;
+}
+
+.dark .card {
+    background-color: #333;
+}
+
+.dark .bhawan h1 {
+    color: white;
+}
+
+.dark .card h1 {
+    color: white;
+}
+
+.dark .card p {
+    color: #ddd;
+}
